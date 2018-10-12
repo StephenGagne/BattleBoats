@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  color: red;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.gameBoard {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.col {
+  height: 4vw;
+  max-height: 50px;
+  width: 4vw;
+  max-width: 50px;
+  border: 1px solid black;
+  margin: 0.5%;
+}
+
+.ships {
+  border: 1px solid black;
+  width: 30%;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+.ship {
+  height: 4vw;
+  max-height: 50px;
+  cursor: pointer;
+}
+
+.carrier {
+  width: 20vw;
+  background-color: blue;
+}
+
+.battleship {
+  width: 16vw;
+  background-color: red;
+}
+
+.cruiser,
+.submarine {
+  width: 12vw;
+}
+
+.cruiser {
+  background-color: purple;
+}
+
+.submarine {
+  background-color: orange;
+}
+
+.minesweeper {
+  width: 8vw;
+  background-color: pink;
+}
